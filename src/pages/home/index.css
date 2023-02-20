@@ -1,16 +1,141 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 .sec-01{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+
+    background-color: #404eed;
+    background-image: url('../../assets/images/fundo-montanhas.svg');
+    background-position: -520px 20px;
+    background-repeat: no-repeat;
+
+    padding-bottom: 115px;
+
+    overflow: hidden;
+}
+
+.sec-01 > img {
+    position: absolute;
+    bottom: 0;
+}
+
+.sec-01 .tenis {
+    left: -268px;
+}
+
+.sec-01 .balcao {
+    right: -228px;
 }
 
 .cabecalho{
     display: flex;
     justify-content: space-between;
-    width: 1080px;
+    align-items: center;
+    width: 1180px;
+    margin-top: 20px;
+    margin-bottom: 140px;
+
+    color: white;
+}
+
+.cab-navegacao{
+    display: flex;
+    align-items: center;
+    font-family: 'Discord4';
+    font-size: 100%;
+
+}
+
+.cab-navegacao a {
+    margin: 0px 10px;
+    padding: 0px 11px;
+    color: white;
+}
+
+.cab-navegacao a:hover {
+    text-decoration: underline;
+}
+
+.cabecalho > a {
+    background-color: white;
+    color: #23272a;
+    display: flex;
+    align-items: center;
+    
+    font-family: 'Discord3';
+    font-size: 14px;
+
+    border-radius: 40px;
+    padding: 10px 16px;
+
+    transition: 0.3s;
+}
+
+.sec-01 > h1 {
+    font-family: 'Discord1';
+    font-size: 56px;
+    text-transform: uppercase;
+    line-height: 52px;
+    color: white;
+
+    width: 480px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sec-01 > p {
+    font-size: 20px;
+    font-family: 'Discord2';
+    text-align: center;
+    line-height: 160%;
+    color: white;
+
+    width: 780px;
+    margin-bottom: 35px;
+}
+
+.botoes {
+    display: flex;
+}
+
+.botoes svg {
+    margin-right: 10px;
+}
+
+.botoes a {
+    display: flex;
+    align-items: center;
+
+    color: #23272a;
+    background-color: white;
+
+    font-size: 20px;
+    font-family: 'Discord3';
+
+    padding: 14px 32px;
+    border-radius: 28px;
+    margin: 0 12px;
+
+    transition: 0.3s;
+} 
+
+.botoes .botao_navegador {
+    background-color: #23272a;
+    color: white;
+}
+
+.botoes a:hover, .cabecalho > a:hover {
+    color: #5865f2;
+    box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
+}
+
+.botao_navegador:hover {
+    background-color: hsl(220,calc(var(--saturation-factor, 1)*7.7%),22.9%);
+    color: white !important;
 }
