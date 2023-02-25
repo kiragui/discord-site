@@ -1,3 +1,7 @@
+:root {
+    --quase-preto: #23272a;
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -64,7 +68,7 @@
 
 .cabecalho > a {
     background-color: white;
-    color: #23272a;
+    color: var(--quase-preto);
     display: flex;
     align-items: center;
     
@@ -112,7 +116,7 @@
     display: flex;
     align-items: center;
 
-    color: #23272a;
+    color: var(--quase-preto);
     background-color: white;
 
     font-size: 20px;
@@ -126,7 +130,7 @@
 } 
 
 .botoes .botao_navegador {
-    background-color: #23272a;
+    background-color: var(--quase-preto);
     color: white;
 }
 
@@ -138,4 +142,38 @@
 .botao_navegador:hover {
     background-color: hsl(220,calc(var(--saturation-factor, 1)*7.7%),22.9%);
     color: white !important;
+}
+
+
+/* SEGUNDA SEÇÃO */
+
+.sec-02 {
+    display: flex;
+    justify-content: center;
+
+    padding: 120px 0;
+}
+
+.sec-02-texto {
+    display: flex;
+    flex-direction: column;
+
+    color: var(--quase-preto);
+
+    width: 370px;
+    margin-left: 120px;
+}
+
+.sec-02-texto h1 {
+    font-size: 48px;
+    line-height: 60px;
+    font-family: 'Discord6';
+}
+
+.sec-02-texto p {
+    line-height: 155%;
+    margin-top: 20px;
+
+    font-size: 20px;
+    font-family: 'Discord2';
 }
